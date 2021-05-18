@@ -1,0 +1,117 @@
+body{
+    background:rgb(58,58,58);
+    color:white;
+    margin:0px;
+    padding:0;
+
+}
+/* HEADER */
+header{
+    background:black;
+    background-image:url("images/coffee.jpeg");
+    background-size:100%;
+    height:400px;
+    padding:20px;
+    text-align:center;
+}
+header a{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    margin-top:40px;
+}
+header .logo a{
+    
+    background-image:url("images/logo_small.png");
+    background-repeat:no-repeat;
+    display:inline-block;
+    height:80px;
+    position:relative;
+    /* text-indent 属性规定文本块中首行文本的缩进。 */
+    text-indent:-90000px;
+    width:80px;
+    top:-25px;
+    margin-left:20px;
+    margin-right:20px;
+    
+}
+header .mobile{
+    display: none;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+li{
+    display:inline-block;
+    margin:0 20px 0 0;
+    padding:2px;
+}
+li:first-child{
+    margin-left:0;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* RESPONSIVE RULES */
+@media screen and (max-width:660px){
+    header {
+        height:250px;
+    }
+}
+@media screen and (max-width:565px){
+    
+    header .mobile{
+        display:inline-block;
+    }
+    header .desktop{
+        display:none;
+    }
+}
+/* FEATURES */
+/* flex是对父元素设置，用于设置或检索弹性盒模型对象的子元素如何分配空间 默认dislay-directon:row*/
+.feature-box{
+    
+    background: white;  
+    color:gray;
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+/* div的display属性默认为“块级”  
+如果改成inline，此元素会被显示为内联元素，元素前后没有换行符，由内容决定大小
+inline-block既是行内又是块级，可以手动指定行内元素的宽高*/
+.feature-box.sales figure{
+    /* display:inline-block; */
+    /* flex布局弹性变化 */
+    margin:auto; 
+    text-align:center;
+    text-transform:uppercase;
+    width:200px;
+}
+.feature-box.sales img{
+   width:200px;
+   border-radius: 10px;
+   box-shadow:gray 2px 2px 10px;
+}
+.feature-box.closeouts div{
+    background: red;
+}
+/* RESPONSIVE RULES
+@media screen and (max-width:778px){
+    .feature-box {
+        height:250px;
+    }
+} */
+/* FOOTER */
+footer{
+    background:black;
+    padding:10px 20px;
+    font-size:12px;
+    color:gray;
+    text-align:center;
+    text-transform:uppercase;
+}

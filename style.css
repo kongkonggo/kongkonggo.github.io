@@ -3,16 +3,25 @@ body{
     color:white;
     margin:0px;
     padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
 
 }
 /* HEADER */
 header{
     background:black;
-    background-image:url("images/coffee.jpeg");
+    background-image:url("images/background.jpg");
     background-size:100%;
     height:400px;
     padding:20px;
     text-align:center;
+    font-size:110%;
+    
+}
+header h1{
+    font-size: 280%;
+}
+header p{
+    font-size:90%;
 }
 header a{
     color:white;
@@ -22,17 +31,16 @@ header a{
 }
 header .logo a{
     
-    background-image:url("images/logo_small.png");
+    background-image:url("images/logo_kong_medium.png");
     background-repeat:no-repeat;
     display:inline-block;
-    height:80px;
     position:relative;
     /* text-indent 属性规定文本块中首行文本的缩进。 */
     text-indent:-90000px;
-    width:80px;
-    top:-25px;
+    width:200px;
+    height:120px;
+    top:-50px;
     margin-left:20px;
-    margin-right:20px;
     
 }
 header .mobile{
@@ -61,7 +69,7 @@ a:hover{
         height:250px;
     }
 }
-@media screen and (max-width:565px){
+@media screen and (max-width:702px){
     
     header .mobile{
         display:inline-block;
